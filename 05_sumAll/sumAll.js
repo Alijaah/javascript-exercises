@@ -4,6 +4,9 @@ const sumAll = function(min, max) {
   min = max;
   max = temp;
   }
+  if (min < 0 || max < 0) {
+    return 'ERROR'
+  }
   let sum = 0;
     for (let i = min; i <= max; i++) {
     sum += i;
@@ -11,7 +14,7 @@ const sumAll = function(min, max) {
   return sum;
 }
 
-sumAll(123, 1)
+sumAll(-10, 4)
 
 // Do not edit below this line
 module.exports = sumAll;
