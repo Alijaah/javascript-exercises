@@ -1,6 +1,6 @@
 const sumAll = function(min, max) {
   if (min > max) {
-  const temp = min;
+  let temp = min;
   min = max;
   max = temp;
   }
